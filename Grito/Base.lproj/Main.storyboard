@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Aileron-Heavy.otf">
+            <string>Aileron-Heavy</string>
+            <string>Aileron-Heavy</string>
+        </mutableArray>
+        <mutableArray key="Signika-Bold.otf">
+            <string>Signika-Bold</string>
+            <string>Signika-Bold</string>
+        </mutableArray>
+        <mutableArray key="Signika-Regular.otf">
+            <string>Signika-Regular</string>
+            <string>Signika-Regular</string>
+            <string>Signika-Regular</string>
+            <string>Signika-Regular</string>
+            <string>Signika-Regular</string>
+            <string>Signika-Regular</string>
+        </mutableArray>
+        <mutableArray key="Signika-Semibold.otf">
+            <string>Signika-Semibold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Grito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rd-d5-hZg">
+                                <rect key="frame" x="66" y="383" width="189" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="189" id="RC5-qR-C9Z"/>
+                                    <constraint firstAttribute="height" constant="57" id="cQt-qq-KpS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="30"/>
+                                <state key="normal" title="Play GRITOS">
+                                    <color key="titleColor" red="1" green="0.031372549019607843" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fc7-bb-8mo" kind="presentation" id="HaI-X0-QBF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grito_colors_edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="ijB-WY-XEy">
+                                <rect key="frame" x="17" y="28" width="288" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="FVg-pW-cEL"/>
+                                    <constraint firstAttribute="height" constant="192" id="X5o-za-3Cb"/>
+                                    <constraint firstAttribute="width" secondItem="ijB-WY-XEy" secondAttribute="height" multiplier="145:96" id="rOG-uW-4JI"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FVg-pW-cEL"/>
+                                        <exclude reference="X5o-za-3Cb"/>
+                                        <exclude reference="rOG-uW-4JI"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bYa-ub-M6q">
+                                <rect key="frame" x="16" y="204" width="288" height="171"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YBJ-CD-Idv">
+                                        <rect key="frame" x="0.0" y="13" width="288" height="145"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">El Grito is a colossal, call-and-response cry shouted late in the night before Mexican Independence Day on September 16th, el Diez y Seis de Septiembre. On this day in 1910, Father Miguel Hidalgo cried out to his parish in the small town of Dolores deploring Spanish colonial rule and the elite. He told his parishioners to fight for their rights. And they did! </string>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Signika-Semibold" family="Signika" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="YBJ-CD-Idv" secondAttribute="centerY" id="i3r-ih-sMo"/>
+                                    <constraint firstItem="YBJ-CD-Idv" firstAttribute="leading" secondItem="bYa-ub-M6q" secondAttribute="leading" id="ks1-IY-OFd"/>
+                                    <constraint firstAttribute="trailing" secondItem="YBJ-CD-Idv" secondAttribute="trailing" id="pde-U6-TLR"/>
+                                    <constraint firstAttribute="centerX" secondItem="YBJ-CD-Idv" secondAttribute="centerX" id="s2q-vp-zuc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awk-uw-jxa">
+                                <rect key="frame" x="280" y="440" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="5zP-nc-A9e"/>
+                                    <constraint firstAttribute="width" constant="20" id="lv1-dF-yeX"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="Infobox_info_icon.svg.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="informationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bL-Cq-Gqt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Awk-uw-jxa" secondAttribute="trailing" constant="20" id="64l-IP-7N2"/>
+                            <constraint firstItem="ijB-WY-XEy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="EMG-aN-GU3"/>
+                            <constraint firstItem="bYa-ub-M6q" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EO0-BU-yLx"/>
+                            <constraint firstItem="ijB-WY-XEy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.35" id="SRA-41-eBP"/>
+                            <constraint firstItem="ijB-WY-XEy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="TFj-Z4-GIN"/>
+                            <constraint firstAttribute="centerX" secondItem="ijB-WY-XEy" secondAttribute="centerX" constant="-1" id="YZ6-IX-2KY"/>
+                            <constraint firstItem="2Rd-d5-hZg" firstAttribute="top" secondItem="bYa-ub-M6q" secondAttribute="bottom" constant="8" id="bkd-7B-cba"/>
+                            <constraint firstAttribute="centerX" secondItem="2Rd-d5-hZg" secondAttribute="centerX" constant="-0.5" id="cd9-3o-pa2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Rd-d5-hZg" secondAttribute="bottom" constant="40" id="ghq-ts-m29"/>
+                            <constraint firstItem="bYa-ub-M6q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nHj-bo-Uh8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Awk-uw-jxa" secondAttribute="bottom" constant="20" id="p7F-zd-oaB"/>
+                            <constraint firstItem="bYa-ub-M6q" firstAttribute="top" secondItem="ijB-WY-XEy" secondAttribute="bottom" constant="8" id="uIC-92-84C"/>
+                            <constraint firstItem="ijB-WY-XEy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="x1P-gb-Jq0"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="x1P-gb-Jq0"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="containerView" destination="bYa-ub-M6q" id="ftZ-ys-ftp"/>
+                        <outlet property="getGritosButton" destination="2Rd-d5-hZg" id="zD9-e2-YkR"/>
+                        <outlet property="imageView" destination="ijB-WY-XEy" id="tXV-2p-8P2"/>
+                        <outlet property="infoButton" destination="Awk-uw-jxa" id="qBo-GA-wlo"/>
+                        <outlet property="textView" destination="YBJ-CD-Idv" id="Shg-Oi-RQL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="-188"/>
+        </scene>
+        <!--Information View Controller-->
+        <scene sceneID="RN2-Lb-Lcj">
+            <objects>
+                <viewController storyboardIdentifier="InformationViewController" id="gDY-5P-e9S" customClass="InformationViewController" customModule="Grito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Jz-ke-qNf"/>
+                        <viewControllerLayoutGuide type="bottom" id="m2u-1I-NsD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JrF-tM-arQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add email address here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XOc-Bi-6cl">
+                                <rect key="frame" x="44" y="442" width="193" height="30"/>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edy-eK-WMp">
+                                <rect key="frame" x="252" y="441" width="52" height="31"/>
+                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="15"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" red="1" green="0.031372549019607843" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailButtonPressed:" destination="gDY-5P-e9S" eventType="touchUpInside" id="4xo-sd-NQg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahx-kS-8Cy">
+                                <rect key="frame" x="16" y="374" width="288" height="60"/>
+                                <string key="text">We hope you love ¡Grito! as much as we do. This is an app created by a bunch of Tejanos who appreciate thier roots and want to share this piece of our culture with you! </string>
+                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="307-dP-KE6">
+                                <rect key="frame" x="0.0" y="241" width="320" height="125"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="grito_pink_edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="b9p-K2-JMK">
+                                        <rect key="frame" x="59" y="8" width="202" height="109"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="1JF-Mu-KfP"/>
+                                            <constraint firstAttribute="height" constant="109" id="BwU-if-6W1"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="1JF-Mu-KfP"/>
+                                                <exclude reference="BwU-if-6W1"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90980392156862744" green="0.89411764705882346" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="b9p-K2-JMK" firstAttribute="top" secondItem="307-dP-KE6" secondAttribute="top" constant="8" id="2qZ-NP-CKv"/>
+                                    <constraint firstItem="b9p-K2-JMK" firstAttribute="leading" secondItem="307-dP-KE6" secondAttribute="leading" constant="59" id="5FD-KK-AwM"/>
+                                    <constraint firstAttribute="bottom" secondItem="b9p-K2-JMK" secondAttribute="bottom" constant="8" id="ETW-ym-5p3"/>
+                                    <constraint firstAttribute="height" constant="125" id="iHv-dH-Wwv"/>
+                                    <constraint firstAttribute="trailing" secondItem="b9p-K2-JMK" secondAttribute="trailing" constant="59" id="xVM-sJ-Jkj"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gT-9U-rjX">
+                                <rect key="frame" x="6" y="440" width="30" height="34"/>
+                                <fontDescription key="fontDescription" name="Aileron-Heavy" family="Aileron" pointSize="18"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="1" green="0.031372549019607843" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="exit:" destination="gDY-5P-e9S" eventType="touchUpInside" id="ht9-mt-zX9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ahx-kS-8Cy" firstAttribute="trailing" secondItem="JrF-tM-arQ" secondAttribute="trailingMargin" id="2BA-sP-QFQ"/>
+                            <constraint firstItem="Ahx-kS-8Cy" firstAttribute="top" secondItem="307-dP-KE6" secondAttribute="bottom" constant="8" id="AV4-TH-tON"/>
+                            <constraint firstItem="XOc-Bi-6cl" firstAttribute="leading" secondItem="6gT-9U-rjX" secondAttribute="trailing" constant="8" id="B5y-1U-rc3"/>
+                            <constraint firstItem="m2u-1I-NsD" firstAttribute="top" secondItem="Ahx-kS-8Cy" secondAttribute="bottom" constant="46" id="JGj-W5-suR"/>
+                            <constraint firstItem="6gT-9U-rjX" firstAttribute="leading" secondItem="JrF-tM-arQ" secondAttribute="leadingMargin" constant="-10" id="N5N-T1-U3E"/>
+                            <constraint firstItem="edy-eK-WMp" firstAttribute="trailing" secondItem="JrF-tM-arQ" secondAttribute="trailingMargin" id="Nzg-cZ-84s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="307-dP-KE6" secondAttribute="trailing" constant="-16" id="O0Q-3j-VdI"/>
+                            <constraint firstItem="m2u-1I-NsD" firstAttribute="top" secondItem="edy-eK-WMp" secondAttribute="bottom" constant="8" id="QmF-j5-gHC"/>
+                            <constraint firstItem="307-dP-KE6" firstAttribute="leading" secondItem="JrF-tM-arQ" secondAttribute="leadingMargin" constant="-16" id="UQR-wu-Y8a"/>
+                            <constraint firstItem="Ahx-kS-8Cy" firstAttribute="leading" secondItem="JrF-tM-arQ" secondAttribute="leadingMargin" id="Uh6-uc-QrF"/>
+                            <constraint firstItem="307-dP-KE6" firstAttribute="top" secondItem="JrF-tM-arQ" secondAttribute="topMargin" id="Zfv-84-M1m"/>
+                            <constraint firstItem="edy-eK-WMp" firstAttribute="leading" secondItem="XOc-Bi-6cl" secondAttribute="trailing" constant="15" id="cgq-Ch-Y5U"/>
+                            <constraint firstItem="m2u-1I-NsD" firstAttribute="top" secondItem="6gT-9U-rjX" secondAttribute="bottom" constant="6" id="clG-SN-LgA"/>
+                            <constraint firstItem="m2u-1I-NsD" firstAttribute="top" secondItem="XOc-Bi-6cl" secondAttribute="bottom" constant="8" id="jkG-7q-Piz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Zfv-84-M1m"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailConstraint" destination="jkG-7q-Piz" id="zsb-ec-lFj"/>
+                        <outlet property="emailTextField" destination="XOc-Bi-6cl" id="Gu3-E3-8nO"/>
+                        <outlet property="informationLabel" destination="Ahx-kS-8Cy" id="Mea-8n-vXV"/>
+                        <outlet property="submitConstraint" destination="QmF-j5-gHC" id="NVW-jE-ZFQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7F4-Lz-TFN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="-757"/>
+        </scene>
+        <!--View Controller For Pages-->
+        <scene sceneID="ecf-uQ-dbM">
+            <objects>
+                <viewController id="Fc7-bb-8mo" customClass="ViewControllerForPages" customModule="Grito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uRw-Rk-LWm"/>
+                        <viewControllerLayoutGuide type="bottom" id="jIY-6C-1wO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oqx-fU-oUf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkX-po-uhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="-188"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="cPW-3z-3jF">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vMR-ts-nZb" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vd-cI-Pba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="-666"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="JdM-OG-kAu">
+            <objects>
+                <viewController storyboardIdentifier="ContentViewController" id="Av1-Vk-U6y" customClass="ContentViewController" customModule="Grito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E6e-yX-ROp"/>
+                        <viewControllerLayoutGuide type="bottom" id="zVf-D2-6Ht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Icy-8a-vso">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="QiA-PB-i0V">
+                                <rect key="frame" x="125" y="443" width="71" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mc-iI-OwC">
+                                <rect key="frame" x="96" y="-35" width="25" height="41"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeT-Ih-j7i">
+                                <rect key="frame" x="50" y="383" width="221" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="R6u-ze-KaF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="proTipPressed:" destination="Av1-Vk-U6y" eventType="touchUpInside" id="esS-XV-dk4"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZg-pR-8IN">
+                                <rect key="frame" x="0.0" y="204" width="320" height="171"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05e-j9-wJ1">
+                                        <rect key="frame" x="98" y="6" width="123" height="123"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="05e-j9-wJ1" secondAttribute="height" multiplier="1:1" id="3y4-oS-Dmq"/>
+                                        </constraints>
+                                        <state key="normal" image="GritoPlayButton3.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playSound:" destination="Av1-Vk-U6y" eventType="touchUpInside" id="yxQ-7i-e6O"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decription of who is gritando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hor-1y-0Yg">
+                                        <rect key="frame" x="54" y="137" width="211" height="21"/>
+                                        <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="17"/>
+                                        <color key="textColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="hor-1y-0Yg" secondAttribute="centerX" constant="0.5" id="CAp-Ku-Yjv"/>
+                                    <constraint firstItem="hor-1y-0Yg" firstAttribute="top" secondItem="05e-j9-wJ1" secondAttribute="bottom" constant="8" id="Xei-tX-iK4"/>
+                                    <constraint firstAttribute="centerX" secondItem="05e-j9-wJ1" secondAttribute="centerX" constant="0.5" id="lE7-bv-tGN"/>
+                                    <constraint firstAttribute="centerY" secondItem="05e-j9-wJ1" secondAttribute="centerY" constant="18.5" id="udc-7E-rda"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="grito_blue_edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="jEw-Z4-AKf">
+                                <rect key="frame" x="17" y="28" width="288" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jEw-Z4-AKf" secondAttribute="height" multiplier="288:191" constant="1.005235602094217" id="4zv-dV-9vz"/>
+                                    <constraint firstAttribute="height" constant="192" id="OZ6-m8-dQ1"/>
+                                    <constraint firstAttribute="width" constant="290" id="UKg-WU-4QV"/>
+                                    <constraint firstAttribute="width" secondItem="jEw-Z4-AKf" secondAttribute="height" multiplier="282:131" id="q9f-9A-IT0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4zv-dV-9vz"/>
+                                        <exclude reference="OZ6-m8-dQ1"/>
+                                        <exclude reference="UKg-WU-4QV"/>
+                                        <exclude reference="q9f-9A-IT0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuK-wZ-lDS">
+                                <rect key="frame" x="274" y="20" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="0H0-Wk-szC"/>
+                                    <constraint firstAttribute="height" constant="26" id="8lw-cu-e7W"/>
+                                </constraints>
+                                <state key="normal" image="shareWhite.png">
+                                    <color key="titleColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="share:" destination="Av1-Vk-U6y" eventType="touchUpInside" id="Kba-g2-FcO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clN-jP-xLq">
+                                <rect key="frame" x="16" y="20" width="38" height="31"/>
+                                <fontDescription key="fontDescription" name="Signika-Bold" family="Signika" pointSize="15"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="663-Fj-Pmp" kind="unwind" unwindAction="unwindToContainerVC:" id="bQT-nM-UG7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jEw-Z4-AKf" secondAttribute="trailing" constant="14" id="4Dl-9f-e6I"/>
+                            <constraint firstItem="oZg-pR-8IN" firstAttribute="leading" secondItem="Icy-8a-vso" secondAttribute="leading" id="AD3-EJ-3n4"/>
+                            <constraint firstAttribute="centerX" secondItem="QiA-PB-i0V" secondAttribute="centerX" constant="-0.5" id="BkZ-Aq-v0b"/>
+                            <constraint firstAttribute="centerX" secondItem="jEw-Z4-AKf" secondAttribute="centerX" constant="-1" id="De9-9Y-xH2"/>
+                            <constraint firstItem="DeT-Ih-j7i" firstAttribute="width" secondItem="05e-j9-wJ1" secondAttribute="width" multiplier="1.8" id="Dxm-eg-Ro6"/>
+                            <constraint firstAttribute="trailing" secondItem="oZg-pR-8IN" secondAttribute="trailing" id="FVT-ji-Ycf"/>
+                            <constraint firstItem="ZuK-wZ-lDS" firstAttribute="top" secondItem="Icy-8a-vso" secondAttribute="top" constant="20" id="GZQ-Rm-LlI"/>
+                            <constraint firstItem="clN-jP-xLq" firstAttribute="top" secondItem="Icy-8a-vso" secondAttribute="top" constant="20" id="QaT-FZ-YTv"/>
+                            <constraint firstItem="jEw-Z4-AKf" firstAttribute="width" secondItem="Icy-8a-vso" secondAttribute="width" multiplier="0.9" id="Tg0-XQ-dn6"/>
+                            <constraint firstItem="oZg-pR-8IN" firstAttribute="top" secondItem="jEw-Z4-AKf" secondAttribute="bottom" constant="8" id="Wmu-PS-fG1"/>
+                            <constraint firstAttribute="centerX" secondItem="DeT-Ih-j7i" secondAttribute="centerX" id="ZO4-9J-O77"/>
+                            <constraint firstItem="jEw-Z4-AKf" firstAttribute="leading" secondItem="Icy-8a-vso" secondAttribute="leading" constant="19" id="apM-uN-pjs"/>
+                            <constraint firstItem="zVf-D2-6Ht" firstAttribute="top" secondItem="DeT-Ih-j7i" secondAttribute="bottom" constant="40" id="bcz-wF-1zx"/>
+                            <constraint firstItem="DeT-Ih-j7i" firstAttribute="top" secondItem="oZg-pR-8IN" secondAttribute="bottom" constant="8" id="hBZ-vQ-2eu"/>
+                            <constraint firstItem="jEw-Z4-AKf" firstAttribute="width" secondItem="Icy-8a-vso" secondAttribute="width" id="mKD-Cx-QKr"/>
+                            <constraint firstItem="zVf-D2-6Ht" firstAttribute="top" secondItem="QiA-PB-i0V" secondAttribute="bottom" id="mXF-CK-CGW"/>
+                            <constraint firstItem="clN-jP-xLq" firstAttribute="leading" secondItem="Icy-8a-vso" secondAttribute="leading" constant="16" id="n2I-c3-Llr"/>
+                            <constraint firstAttribute="trailing" secondItem="DeT-Ih-j7i" secondAttribute="trailing" constant="49" id="qsH-PK-Bmt"/>
+                            <constraint firstItem="jEw-Z4-AKf" firstAttribute="top" secondItem="Icy-8a-vso" secondAttribute="top" multiplier="0.5" constant="28" id="rYK-d0-Tso"/>
+                            <constraint firstAttribute="trailing" secondItem="jEw-Z4-AKf" secondAttribute="trailing" constant="19" id="sp4-QK-42d"/>
+                            <constraint firstItem="jEw-Z4-AKf" firstAttribute="height" secondItem="Icy-8a-vso" secondAttribute="height" multiplier="0.35" id="wrT-Wz-IxG"/>
+                            <constraint firstAttribute="trailing" secondItem="ZuK-wZ-lDS" secondAttribute="trailing" constant="20" id="xJE-dn-I9w"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Dl-9f-e6I"/>
+                                <exclude reference="apM-uN-pjs"/>
+                                <exclude reference="mKD-Cx-QKr"/>
+                                <exclude reference="sp4-QK-42d"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="gritoImage" destination="jEw-Z4-AKf" id="9L9-qk-7s8"/>
+                        <outlet property="playButton" destination="05e-j9-wJ1" id="2Tv-Fc-O6D"/>
+                        <outlet property="proTipButton" destination="DeT-Ih-j7i" id="I44-RS-o5x"/>
+                        <outlet property="screenNumber" destination="QiA-PB-i0V" id="FQn-J8-QGn"/>
+                        <outlet property="titleLabel" destination="hor-1y-0Yg" id="uKA-c4-HPY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bcz-4j-bX0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="663-Fj-Pmp" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1256" y="-188"/>
+        </scene>
+        <!--Pro Tip View Controller-->
+        <scene sceneID="4Pf-O6-WLR">
+            <objects>
+                <viewController storyboardIdentifier="ProTipViewController" id="Zue-fY-fqb" customClass="ProTipViewController" customModule="Grito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jpg-cS-lMx"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1v-m3-t42"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AXu-t8-vTg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-PE-QGj">
+                                <rect key="frame" x="16" y="445" width="288" height="15"/>
+                                <fontDescription key="fontDescription" name="Signika-Regular" family="Signika" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xty-IM-nsP">
+                                <rect key="frame" x="0.0" y="312" width="320" height="125"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="grito_yellow_edit.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTv-Ic-ghA">
+                                        <rect key="frame" x="70" y="8" width="180" height="109"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="109" id="3L5-gE-2P0"/>
+                                            <constraint firstAttribute="width" constant="180" id="pns-92-HOU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poo-Hv-Ntt">
+                                        <rect key="frame" x="8" y="8" width="30" height="34"/>
+                                        <fontDescription key="fontDescription" name="Aileron-Heavy" family="Aileron" pointSize="18"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.90980392156862744" green="0.89411764705882346" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exit:" destination="Zue-fY-fqb" eventType="touchUpInside" id="Ni6-Bc-5dM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.031372549019607843" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="GyO-K0-8qN"/>
+                                    <constraint firstItem="Poo-Hv-Ntt" firstAttribute="leading" secondItem="Xty-IM-nsP" secondAttribute="leading" constant="8" id="SNW-fb-Mv9"/>
+                                    <constraint firstItem="Poo-Hv-Ntt" firstAttribute="top" secondItem="Xty-IM-nsP" secondAttribute="top" constant="8" id="c6X-SL-JCe"/>
+                                    <constraint firstAttribute="centerX" secondItem="wTv-Ic-ghA" secondAttribute="centerX" id="hhi-S4-uca"/>
+                                    <constraint firstAttribute="centerY" secondItem="wTv-Ic-ghA" secondAttribute="centerY" id="nn4-Sh-Pon"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="f1v-m3-t42" firstAttribute="top" secondItem="ewC-PE-QGj" secondAttribute="bottom" constant="20" id="0aO-Oi-Cs8"/>
+                            <constraint firstItem="ewC-PE-QGj" firstAttribute="leading" secondItem="AXu-t8-vTg" secondAttribute="leadingMargin" id="0sP-cj-oRz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Xty-IM-nsP" secondAttribute="trailing" constant="-16" id="8Yg-V3-MQp"/>
+                            <constraint firstItem="ewC-PE-QGj" firstAttribute="top" secondItem="Xty-IM-nsP" secondAttribute="bottom" constant="8" id="eRV-0N-0ML"/>
+                            <constraint firstItem="ewC-PE-QGj" firstAttribute="trailing" secondItem="AXu-t8-vTg" secondAttribute="trailingMargin" id="kVG-3J-VFo"/>
+                            <constraint firstItem="Xty-IM-nsP" firstAttribute="leading" secondItem="AXu-t8-vTg" secondAttribute="leadingMargin" constant="-16" id="y6j-M6-ZvO"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="proTipLabel" destination="ewC-PE-QGj" id="jkB-XW-dEg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DJh-xM-Nmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1256" y="-726"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GritoPlayButton3.png" width="922" height="922"/>
+        <image name="Infobox_info_icon.svg.png" width="1024" height="1024"/>
+        <image name="grito_blue_edit.png" width="1296" height="808"/>
+        <image name="grito_colors_edit.png" width="918" height="578"/>
+        <image name="grito_pink_edit.png" width="1296" height="808"/>
+        <image name="grito_yellow_edit.png" width="1296" height="808"/>
+        <image name="shareWhite.png" width="128" height="128"/>
+    </resources>
+</document>
