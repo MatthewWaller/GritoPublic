@@ -29,8 +29,6 @@ class ProTipViewController: UIViewController {
         
         super.viewDidLoad()
         
-     //   emailTextField.delegate = self
-        
     }
     @IBAction func exit(sender: UIButton) {
         

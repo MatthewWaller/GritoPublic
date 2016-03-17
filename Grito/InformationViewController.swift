@@ -35,9 +35,7 @@ class InformationViewController: UIViewController, UITextFieldDelegate, UIPopove
         informationLabel.text = informationText
         
         informationLabel.font = textFont
-        
-        
-        
+         
         
     }
     

@@ -43,12 +43,6 @@ class ContentViewController: UIViewController, AVAudioPlayerDelegate, UITextFiel
     
     var proTip: String!
     
-//    var url: NSURL!
-//    
-//    var urlText: String!
-//    
-//    var audioPlayer: AVAudioPlayer!
-    
     
     
     

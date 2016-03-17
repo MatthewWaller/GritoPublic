@@ -45,9 +45,6 @@ class ViewControllerForPages: UIViewController, UIPageViewControllerDataSource, 
         
         super.viewDidLoad()
         
-        
-        //self.automaticallyAdjustsScrollViewInsets = false
-        
         self.pageTitles = NSArray(objects: "Whisto", "Short & Sweet", "¡Hechale!","¡Grrrrrito!","Pajaro")
         
         let para1 = "If you’re going to start a grito on or around Diez y Seis, have a drink or two or three and then cry out the following in this order: \n" +
@@ -163,8 +160,6 @@ class ViewControllerForPages: UIViewController, UIPageViewControllerDataSource, 
         
         vc.titleText = self.pageTitles[index]as! String
         
-       // vc.urlText = self.pageSounds[index] as! String
-        
         vc.contentText = self.pageTexts[index] as! String
         
         vc.screenColor = self.backgroundColors[index] as! UIImage
@@ -172,8 +167,6 @@ class ViewControllerForPages: UIViewController, UIPageViewControllerDataSource, 
         vc.gritoLogo = self.gritoImages[index] as! UIImage
     
         vc.proTip = self.protips[index] as! String
-        
-        // = self.backgroundColors[index] as? UIColor
         
         vc.audioPlayDelegate = self
         
@@ -309,19 +302,7 @@ class ViewControllerForPages: UIViewController, UIPageViewControllerDataSource, 
             }
         }
         
-        
-        
-        //self.presentViewController(activityController, animated: true, completion: nil)
-    
-//    let activityViewController = UIActivityViewController(
-//        activityItems: [url],
-//        applicationActivities: nil)
-//        
-//        //activityViewController.excludedActivityTypes = [UIActivityTypeAirDrop]
-//        
-//    self.presentViewController(activityViewController,
-//    animated: true,
-//    completion: nil)
+
     
     }
     

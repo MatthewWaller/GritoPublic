@@ -110,10 +110,7 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         let popoverInfoViewController = infoViewController.popoverPresentationController
         
 
-        //popoverInfoViewController?.popoverLayoutMargins = UIEdgeInsetsMake(0, 0, 0, 0)
         popoverInfoViewController?.permittedArrowDirections = UIPopoverArrowDirection()
-        //popoverInfoViewController?.backgroundColor = UIColor(red: CGFloat(232.0/255.0), green: CGFloat(228.0/255.0), blue: CGFloat(20.0/255.0), alpha: 1.0)
-       // popoverInfoViewController?.popoverBackgroundViewClass?.arrowBase() = 2
         popoverInfoViewController?.delegate = self
         popoverInfoViewController?.sourceView = self.view
         popoverInfoViewController?.sourceRect = self.view.frame
@@ -137,11 +134,6 @@ class ViewController: UIViewController, UIPopoverPresentationControllerDelegate,
         darkView.removeFromSuperview()
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func unwindToContainerVC(segue: UIStoryboardSegue) {
 
